@@ -1,1 +1,1 @@
-"# DiscordStuff" 
+Read the about for now, I have nothing to really say here.

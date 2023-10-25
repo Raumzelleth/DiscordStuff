@@ -1,0 +1,78 @@
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+:root {
+	--font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--settingsicons: 0;
+	--accentcolor: 182,129,185;
+	--accentcolor2: 118,180,193;
+	--linkcolor: 177,226,231;
+	--mentioncolor: 182,129,185;
+	--successcolor: 171,126,181;
+	--warningcolor: 200,132,189;
+	--dangercolor: 227,122,162;
+	--textbrightest: 255,255,255;
+	--textbrighter: 220,219,220;
+	--textbright: 183,182,183;
+	--textdark: 144,143,145;
+	--textdarker: 107,105,109;
+	--textdarkest: 69,67,71;
+	--backgroundaccent: 34,31,36;
+	--backgroundprimary: 32,29,34;
+	--backgroundsecondary: 31,28,33;
+	--backgroundsecondaryalt: 29,26,31;
+	--backgroundtertiary: 27,25,29;
+	--backgroundfloating: 25,23,27
+}
+.mediaAttachmentsContainer-1WGRWy, .oneByOneGridSingle-2ss-Zx{
+	border-radius: 0px !important
+}
+/* Fixes a bug where Discord's user popout will sometimes do a funny ha-ha thing */
+.userPopoutOverlayBackground-3A0Pcz {
+  max-height: 60vh;
+}
+/* No, I don't want to make a thread from a chain of more than 2 replies */
+[class*="threadSuggestionBar_"] {
+  display:none;
+}
+/* Always show full about me */
+[style="-webkit-line-clamp: 6;"] {
+  -webkit-line-clamp: 10000000 !important;
+}
+/* No circle avatars */
+[class^="avatar_"] {
+  border-radius: 25%;
+}
+/* Remove profile effects */
+[class*="profileEffects"] {
+  display:none;
+}
+/* Fixes thread windows */
+.scrollerInner-2PPAp2 {
+    overflow: unset;
+}
+
+/* Match channel text area to user container */
+.form__13a2c {
+  padding: 0;
+}
+.channelTextArea__2e60f {
+  margin: 0;
+}
+.scrollableContainer__33e06 {
+  border-radius: 0;
+  padding-top: 4px;
+  min-height: 48px;
+}
+/* Move typing indicators */
+.typing__6fd1d {
+  top: -24px;
+  left: 0px;
+  width: fit-content;
+  padding-right: 9px;
+  border-radius: 0 8px 0 0;
+  background: var(--bg-overlay-3,var(--channeltextarea-background));
+}
+/* Remove single pixel margin from user container */
+.container_ca50b9 {
+  margin: 0;
+}
+/* End Match channel text area to user container */
